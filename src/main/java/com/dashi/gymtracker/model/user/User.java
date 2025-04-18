@@ -30,6 +30,6 @@ public class User {
     @OneToMany
     private List<User> students = new ArrayList<>();
 
-    // TODO: Later, we could add TrainingSessions list here for easier access
+    // Later, we could add TrainingSessions list here for easier access
 }
 
