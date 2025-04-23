@@ -22,6 +22,8 @@ public class TrainingExercise {
     @ManyToOne(optional = false)
     private Exercise exercise;
 
+    private String customExercise;
+
     @OneToMany(mappedBy = "trainingExercise", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TrainingSerie> series = new ArrayList<>();
 }
