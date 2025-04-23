@@ -23,14 +23,5 @@ public class User {
     private String email;
 
     private String password;
-
-    @Enumerated(EnumType.STRING)
-    private UserRole role = UserRole.USER;
-
-    // If the user is a TRAINER, this list will hold his/her students
-    @OneToMany
-    private List<User> students = new ArrayList<>();
-
-    // Later, we could add TrainingSessions list here for easier access
 }
 
